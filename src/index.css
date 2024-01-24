@@ -1,13 +1,66 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+nav{
+  padding: 18px;
+  background-color: rgb(225, 66, 153);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+nav ul{
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  
+}
+
+nav ul li .link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+nav div .link{
+  color: white;
+  text-decoration: none;
+font-size: 30px;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  height: 80px;
+}
+
+
+.products{
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;;
+}
+.btn{
+  margin: 4px;
+  color: white;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  cursor: pointer;
 }
